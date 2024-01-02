@@ -18,10 +18,16 @@ Console.WriteLine("Opened Browser");
 await page.GotoAsync("https://www.google.com");
 Console.WriteLine("Page Loaded");
 
+string title=await page.TitleAsync();
+Console.WriteLine(title);
+
 await page.GetByTitle("Search").FillAsync("hp laptop");
 //await page.Locator("#APjFgb").FillAsync("hp laptop");//another method,# for id,. for class
 Console.WriteLine("Typed");
 await page.Locator("(//input[@value='Google Search'])[2]").ClickAsync();
 Console.WriteLine("Clicked");
+
+title=await page.TitleAsync();
+Console.WriteLine(title);
 
 

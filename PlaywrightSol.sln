@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppProj", "ConsoleAppProj\ConsoleAppProj.csproj", "{32BF5836-A74C-44C3-8B11-8991A4B741FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightNUnit", "PlaywrightNUnit\PlaywrightNUnit.csproj", "{C71445BD-9132-47D6-8160-D211C0285BE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{32BF5836-A74C-44C3-8B11-8991A4B741FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32BF5836-A74C-44C3-8B11-8991A4B741FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32BF5836-A74C-44C3-8B11-8991A4B741FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71445BD-9132-47D6-8160-D211C0285BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71445BD-9132-47D6-8160-D211C0285BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71445BD-9132-47D6-8160-D211C0285BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71445BD-9132-47D6-8160-D211C0285BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
