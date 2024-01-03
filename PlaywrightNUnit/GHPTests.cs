@@ -1,4 +1,3 @@
-using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
 
 namespace PlaywrightNUnit
@@ -9,14 +8,20 @@ namespace PlaywrightNUnit
         public void Setup()
         {
         }
-       
+
+        //Manual instance
         //[Test]
         //public async Task Test1()
         //{
         //    using var playwright = await Playwright.CreateAsync();
 
         //    //launch browser
-        //    await using var browser = await playwright.Chromium.LaunchAsync();
+        //    await using var browser = await playwright.Chromium.LaunchAsync(
+        //        //new BrowserTypeLaunchOptions
+        //        //{
+        //        //    Headless=false //to see browser launching
+        //        //}
+        //        );
 
         //    //page instance
         //    var context = await browser.NewContextAsync();
@@ -60,12 +65,13 @@ namespace PlaywrightNUnit
             await Page.Locator("(//input[@value='Google Search'])[2]").ClickAsync();
             Console.WriteLine("Clicked");
 
-            title = await Page.TitleAsync();
-            Console.WriteLine(title);
-
-
-            Assert.That(title, Does.Contain("hp laptop"));
-            //Expect(Page.TitleAsync()).Equals(""hp laptop"));
+            //nunit testing
+            //title = await Page.TitleAsync();
+            //Console.WriteLine(title);
+            //Assert.That(title, Does.Contain("hp laptop"));
+             await Expect(Page).ToHaveTitleAsync("hp laptop - Google Search");//expect is pw testing component.
+            //title or url go for ipage,anything inside dom go for locator.
         }
+        //In playwright instance-command line interface option for headful mode,but playwright suggests not to go for headful mode.
     }
 }
