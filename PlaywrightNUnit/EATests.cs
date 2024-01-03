@@ -19,18 +19,27 @@ namespace PlaywrightNUnit
             await Page.GotoAsync("http://eaapp.somee.com/");
             Console.WriteLine("Page Loaded");
 
-           // await Page.GetByText("Login").ClickAsync();//await-since it is asynchronous operation.
-            var lnkLogin= Page.Locator(selector: "text=Login");
-            await lnkLogin.ClickAsync();//if we want to do more than one action on an element 
+            // await Page.GetByText("Login").ClickAsync();//await-since it is asynchronous operation.
+            //var lnkLogin= Page.Locator(selector: "text=Login");
+            //await lnkLogin.ClickAsync();//if we want to do more than one action on an element 
+
+            await Page.ClickAsync(selector: "text=Login");
             await Console.Out.WriteLineAsync("Login Link Clicked");
             await Expect(Page).ToHaveURLAsync("http://eaapp.somee.com/Account/Login");
 
+            //way 1
             //await Page.GetByLabel("UserName").FillAsync(value:"admin");
             //await Page.GetByLabel("Password").FillAsync(value:"password");
             //await Console.Out.WriteLineAsync("Typed");
 
-            await Page.Locator("#UserName").FillAsync(value: "admin");
-            await Page.Locator("#Password").FillAsync(value: "password");
+            //way2
+            //await Page.Locator("#UserName").FillAsync(value: "admin");
+            //await Page.Locator("#Password").FillAsync(value: "password");
+            //await Console.Out.WriteLineAsync("Typed");
+
+            //way3
+            await Page.FillAsync(selector: "#UserName", "admin");
+            await Page.FillAsync(selector: "#Password", "password");
             await Console.Out.WriteLineAsync("Typed");
 
             //await Page.Locator("//input[@value='Log in']").ClickAsync();
