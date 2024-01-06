@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWAPI", "PWAPI\PWAPI.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonPW", "AmazonPW\AmazonPW.csproj", "{77C620B9-0B9C-4932-A8CF-1BD19311891F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONPlaceholderAPI", "JSONPlaceholderAPI\JSONPlaceholderAPI.csproj", "{664719FB-1C83-4BEC-93FA-38D51433048A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{77C620B9-0B9C-4932-A8CF-1BD19311891F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C620B9-0B9C-4932-A8CF-1BD19311891F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C620B9-0B9C-4932-A8CF-1BD19311891F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664719FB-1C83-4BEC-93FA-38D51433048A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664719FB-1C83-4BEC-93FA-38D51433048A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664719FB-1C83-4BEC-93FA-38D51433048A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664719FB-1C83-4BEC-93FA-38D51433048A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{19FF19D5-8105-482B-BEEC-61955B3EE016} = {D2706922-DE53-44F4-8E52-9556031264EE}
 		{77C620B9-0B9C-4932-A8CF-1BD19311891F} = {D2706922-DE53-44F4-8E52-9556031264EE}
+		{664719FB-1C83-4BEC-93FA-38D51433048A} = {D2706922-DE53-44F4-8E52-9556031264EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98D887F5-E306-4AE0-9B7A-26ED699054D6}
