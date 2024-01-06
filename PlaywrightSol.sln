@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaaptolPW", "NaaptolPW\Naap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWPOM", "PWPOM\PWPOM.csproj", "{7D8B78AF-B006-4ECF-9239-5D4570A7B487}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWAPI", "PWAPI\PWAPI.csproj", "{FDA60D5F-E928-4C24-9025-2F299CF54911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{7D8B78AF-B006-4ECF-9239-5D4570A7B487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D8B78AF-B006-4ECF-9239-5D4570A7B487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D8B78AF-B006-4ECF-9239-5D4570A7B487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA60D5F-E928-4C24-9025-2F299CF54911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA60D5F-E928-4C24-9025-2F299CF54911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA60D5F-E928-4C24-9025-2F299CF54911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA60D5F-E928-4C24-9025-2F299CF54911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
